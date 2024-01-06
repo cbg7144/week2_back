@@ -2,7 +2,9 @@ package jpadb.demo.repository;
 
 import jpadb.demo.model.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface MovieRepository extends JpaRepository<Movie, Long> {
+@Repository
+public interface MovieRepository extends JpaRepository<Movie, String> {
 
 }

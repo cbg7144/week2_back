@@ -11,20 +11,24 @@ import java.sql.Date;
 @Entity
 public class Movie {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 여기서는 increasing key로 primary key를 자동생성해주지만, 나는 id를 primary key로 생성해줬기 때문에 필요없다
-    private Long docid;
+    private String docid;
     private String title;
-    private String actorNm;
+    private String directorNm;
+    private String actor1;
+    private String actor2;
     private int runtime;
     private String rating;
     private String genre;
+    private String reRlsDate;
     private String posterUrl;
+    private String stillUrl;
+    private String vodUrl;
 
-    public Long getDocid() {
+    public String getDocid() {
         return docid;
     }
 
-    public void setDocid(Long docid) {
+    public void setDocid(String docid) {
         this.docid = docid;
     }
 
@@ -36,12 +40,28 @@ public class Movie {
         this.title = title;
     }
 
-    public String getActorNm() {
-        return actorNm;
+    public String getDirectorNm() {
+        return directorNm;
     }
 
-    public void setActorNm(String actorNm) {
-        this.actorNm = actorNm;
+    public void setDirectorNm(String directorNm) {
+        this.directorNm = directorNm;
+    }
+
+    public String getActor1() {
+        return actor1;
+    }
+
+    public void setActor1(String actor1) {
+        this.actor1 = actor1;
+    }
+
+    public String getActor2() {
+        return actor2;
+    }
+
+    public void setActor2(String actor2) {
+        this.actor2 = actor2;
     }
 
     public int getRuntime() {
@@ -68,6 +88,14 @@ public class Movie {
         this.genre = genre;
     }
 
+    public String getReRlsDate() {
+        return reRlsDate;
+    }
+
+    public void setReRlsDate(String reRlsDate) {
+        this.reRlsDate = reRlsDate;
+    }
+
     public String getPosterUrl() {
         return posterUrl;
     }
@@ -76,4 +104,33 @@ public class Movie {
         this.posterUrl = posterUrl;
     }
 
+    public String getStillUrl() {
+        return stillUrl;
+    }
+
+    public void setStillUrl(String stillUrl) {
+        this.stillUrl = stillUrl;
+    }
+
+    public String getVodUrl() {
+        return vodUrl;
+    }
+
+    public void setVodUrl(String vodUrl) {
+        this.vodUrl = vodUrl;
+    }
 }
+
+/*cumulativeResponse.append("DOCID: ").append(docId)
+                        .append("\nTitle: ").append(title)
+                        .append("\nDirector: ").append(directorNm)
+                        .append("\nActor 1: ").append(actor1)
+                        .append("\nActor 2: ").append(actor2)
+                        .append("\nRuntime: ").append(runtime)
+                        .append("\nRating: ").append(rating)
+                        .append("\nGenre: ").append(genre)
+                        .append("\nRelease Date: ").append(repRlsDate)
+                        .append("\nPoster URL: ").append(posterUrl)
+                        .append("\nStill URL: ").append(stillUrl)
+                        .append("\nVOD URL: ").append(vodUrl)
+                        .append("\n\n");*/

@@ -33,7 +33,11 @@ public class MovieDao { // auto-writing / Data Access Object
         repository.delete(movie);
     }
 
-    public void deleteById(Long docid){
+    public void deleteById(String docid){
         repository.deleteById(docid);
+    }
+
+    public Iterable<Movie> findAll() {
+        return repository.findAll();
     }
 }

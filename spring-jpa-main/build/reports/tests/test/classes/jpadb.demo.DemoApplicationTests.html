@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.315s</div>
+<div class="counter">6.128s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">addMovieTest()</td>
-<td class="success">0.315s</td>
+<td class="success">apiDataToDatabaseTest()</td>
+<td class="success">6.128s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>22:59:03.357 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jpadb.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-22:59:03.390 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jpadb.demo.DemoApplication for test class jpadb.demo.DemoApplicationTests
+<pre>18:01:24.080 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jpadb.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:01:24.114 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jpadb.demo.DemoApplication for test class jpadb.demo.DemoApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -101,22 +101,1152 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.1)
 
-2024-01-05T22:59:03.510+09:00  INFO 29612 --- [    Test worker] jpadb.demo.DemoApplicationTests          : Starting DemoApplicationTests using Java 21.0.1 with PID 29612 (started by jinsuhhur in /Users/jinsuhhur/Documents/2024/madcamp/2week/2week-backend/spring-jpa-main)
-2024-01-05T22:59:03.511+09:00  INFO 29612 --- [    Test worker] jpadb.demo.DemoApplicationTests          : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-01-05T22:59:03.713+09:00  INFO 29612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-05T22:59:03.731+09:00  INFO 29612 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
-2024-01-05T22:59:03.881+09:00  INFO 29612 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-05T22:59:03.899+09:00  INFO 29612 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-05T22:59:03.910+09:00  INFO 29612 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-05T22:59:03.986+09:00  INFO 29612 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-05T22:59:03.996+09:00  INFO 29612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-05T22:59:04.128+09:00  INFO 29612 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48fc0211
-2024-01-05T22:59:04.129+09:00  INFO 29612 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-05T22:59:04.150+09:00  WARN 29612 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-05T22:59:04.425+09:00  INFO 29612 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-05T22:59:04.461+09:00  INFO 29612 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-05T22:59:04.601+09:00  WARN 29612 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-05T22:59:04.719+09:00  INFO 29612 --- [    Test worker] jpadb.demo.DemoApplicationTests          : Started DemoApplicationTests in 1.283 seconds (process running for 1.657)
+2024-01-06T18:01:24.229+09:00  WARN 35447 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/jinsuhhur/.gradle/caches/modules-2/files-2.1/org.json/json/20231013/e22e0c040fe16f04ffdb85d851d77b07fc05ea52/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/Users/jinsuhhur/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-01-06T18:01:24.233+09:00  INFO 35447 --- [    Test worker] jpadb.demo.DemoApplicationTests          : Starting DemoApplicationTests using Java 21.0.1 with PID 35447 (started by jinsuhhur in /Users/jinsuhhur/Documents/2024/madcamp/2week/2week-backend/spring-jpa-main)
+2024-01-06T18:01:24.233+09:00  INFO 35447 --- [    Test worker] jpadb.demo.DemoApplicationTests          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-01-06T18:01:24.438+09:00  INFO 35447 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-06T18:01:24.458+09:00  INFO 35447 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2024-01-06T18:01:24.608+09:00  INFO 35447 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-06T18:01:24.628+09:00  INFO 35447 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-06T18:01:24.639+09:00  INFO 35447 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-06T18:01:24.713+09:00  INFO 35447 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-06T18:01:24.724+09:00  INFO 35447 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-06T18:01:24.863+09:00  INFO 35447 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d4b019e
+2024-01-06T18:01:24.864+09:00  INFO 35447 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-06T18:01:24.886+09:00  WARN 35447 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-06T18:01:25.163+09:00  INFO 35447 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-06T18:01:25.183+09:00  INFO 35447 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-06T18:01:25.323+09:00  WARN 35447 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-06T18:01:25.446+09:00  INFO 35447 --- [    Test worker] jpadb.demo.DemoApplicationTests          : Started DemoApplicationTests in 1.286 seconds (process running for 1.667)
+제목:  컨버세이션
+감독: 김덕중
+제목:  서복
+감독: 이용주
+제목:  구원
+감독: 이창무
+제목:  요정
+감독: 신택수
+제목:  혈권
+감독: 김묵
+제목:  우키시마호
+감독: 김진홍
+제목:  마지막 휴가
+감독: 노거경
+제목:  황혼의 부루-스
+감독: 장일호
+제목:  로또쉐어
+감독: 소재익
+제목:  피어썸
+감독: 이상헌
+제목:  포크레인
+감독: 이주형
+제목:  피해자
+감독: 김수용
+제목:  쇼미더고스트
+감독: 김은경
+제목:  히치하이크
+감독: 정희재
+제목:  인싸
+감독: 이수성
+제목:  평평남녀
+감독: 김수정
+제목:  카인의 후예
+감독: 유현목
+제목:  요절복통 일망타진
+감독: 심우섭
+제목:  3.5교시
+감독: 유희정
+제목:  좀비크러쉬: 헤이리
+감독: 장현상
+제목:  물망초
+감독: 최훈
+제목:  모가디슈
+감독: 류승완
+제목:  말이야 바른 말이지
+감독: 윤성호
+제목:  학교 가는 길
+감독: 김정인
+제목:  로그 인 벨지움
+감독: 유태오
+제목:  애처일기
+감독: 김응천
+제목:  초선
+감독: 전후석
+제목:  애수의 샌프란시스코
+감독: 정소영
+제목:  저 언덕을 넘어서
+감독: 강찬우
+제목:  철면황제
+감독: 최경옥
+제목:  꿈의 제인
+감독: 조현훈
+제목:  조총련
+감독: 박태원
+제목:  나만 보이니
+감독: 임용재
+제목:  엄마와 나
+감독: 연왕모
+제목:  연화
+감독: 임권택
+제목:  트랜스
+감독: 도내리
+제목:  콜
+감독: 이충현
+제목:  감쪽같은 그녀
+감독: 허인무
+제목:  스파이형 모델
+감독: 김영일
+제목:  다녀와요, 다녀왔습니다
+감독: 손인영
+제목:  위대한 계약: 파주, 책, 도시
+감독: 정다운
+제목:  영희
+감독: 차상민
+제목:  디스 아메리카노
+감독: 권유주
+제목:  흑권
+감독: 황풍
+제목:  우정
+감독: 김효천
+제목:  테우리
+감독: 이난
+제목:  여자 베트콩 18호
+감독: 강범구
+제목:  썰
+감독: 황승재
+제목:  데드캠핑 더라이브
+감독: 김현우
+제목:  왜 그랬던가
+감독: 임권택
+제목:  우리는 이별에 서툴러서
+감독: 이현지
+제목:  왜?
+감독: 박노식
+제목:  숏버스 기묘행
+감독: 현명우
+제목:  인질
+감독: 필감성
+제목:  의사 안중근
+감독: 주동진
+제목:  승리호
+감독: 조성희
+제목:  공기살인
+감독: 조용선
+제목:  태백산맥
+감독: 권영순
+제목:  낫아웃
+감독: 이정곤
+제목:  명색이 아프레걸
+감독: 김광보
+제목:  비행
+감독: 조성빈
+제목:  범죄도시2
+감독: 이상용
+제목:  김두한(속,제4부)
+감독: 고영남
+제목:  수프와 이데올로기
+감독: 양영희
+제목:  더블패티
+감독: 백승환
+제목:  안나푸르나
+감독: 황승재
+제목:  싸나희 순정
+감독: 정병각
+제목:  멀리가지마라
+감독: 박현용
+제목:  인트로덕션
+감독: 홍상수
+제목:  천사의 눈물
+감독: 최훈
+response: DOCID: K27516
+Title:  컨버세이션
+Director: 김덕중
+Actor 1: 조은지
+Actor 2: 박종환
+Runtime: 120
+Rating: 12세관람가
+Genre: 드라마
+Release Date: 20230223
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/95/tn_DPK020209.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/63/92/tn_DST793208.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK059037_P02.mp4
+
+DOCID: K22200
+Title:  서복
+Director: 이용주
+Actor 1: 공유
+Actor 2: 박보검
+Runtime: 114
+Rating: 15세관람가
+Genre: 드라마,액션
+Release Date: 20210415
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/12/tn_DPK016544.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/37/tn_DST703900.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050107_P02.mp4
+
+DOCID: K22437
+Title:  구원
+Director: 이창무
+Actor 1: 김대건
+Actor 2: 이상인
+Runtime: 104
+Rating: 18세관람가(청소년관람불가)
+Genre: 스릴러
+Release Date: 20210408
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/23/tn_DPK016876.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/99/tn_DST710653.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK049933_P02.mp4
+
+DOCID: K27481
+Title:  요정
+Director: 신택수
+Actor 1: 류현경
+Actor 2: 김주헌
+Runtime: 79
+Rating: 12세관람가
+Genre: 드라마,판타지
+Release Date: 20221201
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/86/tn_DPK019786.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/63/39/tn_DST786212.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK058655_P02.mp4
+
+DOCID: K02690
+Title:  혈권
+Director: 김묵
+Actor 1: 문태선
+Actor 2: 이대엽
+Runtime: 79
+Rating: 고등학생이상관람가
+Genre: 액션
+Release Date: 19731103
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/45/tn_DPK008106.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/10/tn_DST743603.jpg
+VOD URL: 
+
+DOCID: A09067
+Title:  우키시마호
+Director: 김진홍
+Actor 1: 안재모
+Actor 2: 권윤영
+Runtime: 86
+Rating: 전체관람가
+Genre: 사회,역사
+Release Date: 20190919
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/31/tn_DPA000989.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/51/81/tn_DST663150.jpg
+VOD URL: 
+
+DOCID: K23168
+Title:  마지막 휴가
+Director: 노거경
+Actor 1: 이영범
+Actor 2: 장순미
+Runtime: 90
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20201210
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/14/tn_DPK016639.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/59/tn_DST706345.jpg
+VOD URL: 
+
+DOCID: K01764
+Title:  황혼의 부루-스
+Director: 장일호
+Actor 1: 윤정희
+Actor 2: 김진규
+Runtime: 100
+Rating: 고등학생이상관람가
+Genre: 반공/분단,미스터리,스릴러
+Release Date: 19681024
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/11/tn_DPK016503.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/12/30/tn_S_K01764_4.jpg
+VOD URL: 
+
+DOCID: K26617
+Title:  로또쉐어
+Director: 소재익
+Actor 1: 최시형
+Actor 2: 김서지
+Runtime: 89
+Rating: 15세관람가
+Genre: 미스터리,스릴러,액션,범죄
+Release Date: 20211124
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/40/tn_DPK017770.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/72/tn_DST750579.jpg
+VOD URL: 
+
+DOCID: K26619
+Title:  피어썸
+Director: 이상헌
+Actor 1: 조동혁
+Actor 2: 차선우
+Runtime: 82
+Rating: 15세관람가
+Genre: 공포,미스터리
+Release Date: 20211007
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/40/tn_DPK017775.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/03/tn_DST742952.jpg
+VOD URL: 
+
+DOCID: K16428
+Title:  포크레인
+Director: 이주형
+Actor 1: 엄태웅
+Actor 2: 김경익
+Runtime: 92
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20170727
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/04/46/tn_DPK012535.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/49/57/tn_DSKT299479.jpg
+VOD URL: 
+
+DOCID: K01745
+Title:  피해자
+Director: 김수용
+Actor 1: 김진규
+Actor 2: 문정숙
+Runtime: 81
+Rating: 연소자불가
+Genre: 문예
+Release Date: 19680906
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/78/tn_DPK01745A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/12/30/tn_S_K01745_6.jpg
+VOD URL: 
+
+DOCID: K24573
+Title:  쇼미더고스트
+Director: 김은경
+Actor 1: 한승연
+Actor 2: 김현목
+Runtime: 83
+Rating: 12세관람가
+Genre: 코메디,공포
+Release Date: 20210909
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/36/tn_DPK017400.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/57/08/tn_DST723065.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050904_P02.mp4
+
+DOCID: K19868
+Title:  히치하이크
+Director: 정희재
+Actor 1: 노정의
+Actor 2: 박희순
+Runtime: 108
+Rating: 12세관람가
+Genre: 가족,드라마
+Release Date: 20190314
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/00/tn_DPK014412.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/50/84/tn_DSKT307944.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK041508_P02.mp4
+
+DOCID: K23364
+Title:  인싸
+Director: 이수성
+Actor 1: 동현
+Actor 2: 송민경
+Runtime: 83
+Rating: 12세관람가
+Genre: 코메디,액션
+Release Date: 20210304
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/18/tn_DPK016750.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/75/tn_DST707974.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK048872_P02.mp4
+
+DOCID: K28713
+Title:  평평남녀
+Director: 김수정
+Actor 1: 이태경
+Actor 2: 이한주
+Runtime: 121
+Rating: 12세관람가
+Genre: 드라마,멜로/로맨스
+Release Date: 20220428
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/66/tn_DPK018928.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/03/tn_DST764049.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK055801_P02.mp4
+
+DOCID: K01702
+Title:  카인의 후예
+Director: 유현목
+Actor 1: 김진규
+Actor 2: 문희
+Runtime: 107
+Rating: 국민학생이상관람가
+Genre: 시대극/사극,문예,반공/분단
+Release Date: 19680601
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/93/tn_DPK01702A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/12/30/tn_S_K01702_2.jpg
+VOD URL: 
+
+DOCID: K01942
+Title:  요절복통 일망타진
+Director: 심우섭
+Actor 1: 서영춘
+Actor 2: 어윤길
+Runtime: 88
+Rating: 중학생이상
+Genre: 코메디
+Release Date: 19690719
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/35/tn_DPK007518.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/23/04/tn_DSKT084651.JPG
+VOD URL: 
+
+DOCID: K28668
+Title:  3.5교시
+Director: 유희정
+Actor 1: 조아
+Actor 2: 임지섭
+Runtime: 105
+Rating: 12세관람가
+Genre: 멜로/로맨스,미스터리,판타지
+Release Date: 20220414
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/66/tn_DPK018912.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/07/tn_DST764381.jpg
+VOD URL: 
+
+DOCID: K22836
+Title:  좀비크러쉬: 헤이리
+Director: 장현상
+Actor 1: 공민정
+Actor 2: 이민지
+Runtime: 119
+Rating: 15세관람가
+Genre: 코메디,액션
+Release Date: 20210630
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/31/tn_DPK017144.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/54/74/tn_DST696227.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050471_P02.mp4
+
+DOCID: K01915
+Title:  물망초
+Director: 최훈
+Actor 1: 최은희
+Actor 2: 윤정희
+Runtime: 105
+Rating: 중학생이상
+Genre: 멜로/로맨스,가족,드라마
+Release Date: 19690528
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/86/tn_DPK01915A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/23/19/tn_DSKT086558.JPG
+VOD URL: 
+
+DOCID: K23889
+Title:  모가디슈
+Director: 류승완
+Actor 1: 김윤석
+Actor 2: 조인성
+Runtime: 121
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20210728
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/33/tn_DPK017250.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/57/14/tn_DST723677.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050583_P02.mp4
+
+DOCID: K28801
+Title:  말이야 바른 말이지
+Director: 윤성호
+Actor 1: 김경일
+Actor 2: 양현민
+Runtime: 68
+Rating: 전체관람가
+Genre: 드라마,코메디,옴니버스
+Release Date: 20230517
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/18/03/tn_DPK020494.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/14/tn_DST765085.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK059313_P02.mp4
+
+DOCID: A09981
+Title:  학교 가는 길
+Director: 김정인
+Actor 1: 이은자
+Actor 2: 정난모
+Runtime: 99
+Rating: 12세관람가
+Genre: 교육,사회
+Release Date: 20210505
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/26/tn_DPA001278.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/56/02/tn_DST711076.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050226_P02.mp4
+
+DOCID: A10697
+Title:  로그 인 벨지움
+Director: 유태오
+Actor 1: 유태오
+Actor 2: 천우희
+Runtime: 65
+Rating: 전체관람가
+Genre: 인물
+Release Date: 20211201
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/51/tn_DPA001475.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/43/tn_DST747295.jpg
+VOD URL: 
+
+DOCID: K02885
+Title:  애처일기
+Director: 김응천
+Actor 1: 배삼룡
+Actor 2: 박남옥
+Runtime: 108
+Rating: 미성년자관람가
+Genre: 코메디,드라마
+Release Date: 19750331
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/48/tn_DPK008335.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/25/15/tn_DSKT104183.jpg
+VOD URL: 
+
+DOCID: A10960
+Title:  초선
+Director: 전후석
+Actor 1: 영김
+Actor 2: 데이비드 김
+Runtime: 90
+Rating: 12세관람가
+Genre: 사회
+Release Date: 20221103
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/81/tn_DPA001647.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/63/07/tn_DST783147.jpg
+VOD URL: 
+
+DOCID: K02877
+Title:  애수의 샌프란시스코
+Director: 정소영
+Actor 1: 신영균
+Actor 2: 윤일봉
+Runtime: 96
+Rating: 미성년자관람가
+Genre: 멜로/로맨스
+Release Date: 19750328
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/01/57/tn_DPK004907.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/25/12/tn_DSKT104040.jpg
+VOD URL: 
+
+DOCID: K01694
+Title:  저 언덕을 넘어서
+Director: 강찬우
+Actor 1: 남진
+Actor 2: 김지수
+Runtime: 105
+Rating: 중학생이상
+Genre: 드라마,멜로/로맨스
+Release Date: 19680517
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/34/tn_DPK007441.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/23/02/tn_DSKT084334.JPG
+VOD URL: 
+
+DOCID: K01540
+Title:  철면황제
+Director: 최경옥
+Actor 1: 신영균
+Actor 2: 리칭
+Runtime: 95
+Rating: 국민학생관람불가
+Genre: 시대극/사극,활극,합작(번안물)
+Release Date: 19670514
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/29/tn_DPK007201.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/13/28/tn_DSKT001206.JPG
+VOD URL: 
+
+DOCID: K15779
+Title:  꿈의 제인
+Director: 조현훈
+Actor 1: 이민지
+Actor 2: 이주영
+Runtime: 104
+Rating: 18세관람가(청소년관람불가)
+Genre: 드라마
+Release Date: 20170531
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/04/42/tn_DPK012405.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/47/85/tn_DSKT279081.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK039065_P02.mp4
+
+DOCID: K02856
+Title:  조총련
+Director: 박태원
+Actor 1: 문오장
+Actor 2: 허장강
+Runtime: 104
+Rating: 중학생이상
+Genre: 반공/분단
+Release Date: 19750412
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/46/tn_DPK008198.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/13/31/tn_DSKT001529.JPG
+VOD URL: 
+
+DOCID: K24424
+Title:  나만 보이니
+Director: 임용재
+Actor 1: 정진운
+Actor 2: 안솔빈
+Runtime: 97
+Rating: 15세관람가
+Genre: 코메디,공포
+Release Date: 20210721
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/32/tn_DPK017233.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/57/14/tn_DST723680.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050633_P02.mp4
+
+DOCID: A09760
+Title:  엄마와 나
+Director: 연왕모
+Actor 1: 김숙년
+Actor 2: 김일환
+Runtime: 90
+Rating: 전체관람가
+Genre: 인물
+Release Date: 20220414
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/66/tn_DPA001569.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/53/87/tn_DST686941.jpg
+VOD URL: 
+
+DOCID: K02850
+Title:  연화
+Director: 임권택
+Actor 1: 고은아
+Actor 2: 이순재
+Runtime: 106
+Rating: 고등학생이상관람가
+Genre: 시대극/사극
+Release Date: 19750308
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/46/tn_DPK008192.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/22/76/tn_DSKT001528.jpg
+VOD URL: 
+
+DOCID: K28154
+Title:  트랜스
+Director: 도내리
+Actor 1: 황정인
+Actor 2: 윤경호
+Runtime: 92
+Rating: 15세관람가
+Genre: SF,판타지,스릴러,미스터리
+Release Date: 20221117
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/85/tn_DPK019763.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/44/tn_DST747471.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK058669_P02.mp4
+
+DOCID: K17675
+Title:  콜
+Director: 이충현
+Actor 1: 박신혜
+Actor 2: 전종서
+Runtime: 112
+Rating: 15세관람가
+Genre: 스릴러,미스터리
+Release Date: 20201127
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/47/tn_DPK015441.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/50/53/tn_DSKT306500.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK044766_P02.mp4
+
+DOCID: K21347
+Title:  감쪽같은 그녀
+Director: 허인무
+Actor 1: 나문희
+Actor 2: 김수안
+Runtime: 104
+Rating: 전체관람가
+Genre: 코메디,드라마
+Release Date: 20191204
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/36/tn_DPK015171.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/52/49/tn_DST672181.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK044414_P02.mp4
+
+DOCID: K28788
+Title:  스파이형 모델
+Director: 김영일
+Actor 1: 주종혁
+Actor 2: 이아주
+Runtime: 86
+Rating: 15세관람가
+Genre: SF
+Release Date: 20220720
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/74/tn_DPK019203.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/83/tn_DST772565.jpg
+VOD URL: 
+
+DOCID: A10946
+Title:  다녀와요, 다녀왔습니다
+Director: 손인영
+Actor 1: 김현숙
+Actor 2: 김현주
+Runtime: 64
+Rating: 전체관람가
+Genre: 드라마
+Release Date: 20220421
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/67/tn_DPA001572.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/11/tn_DST764788.jpg
+VOD URL: 
+
+DOCID: A09997
+Title:  위대한 계약: 파주, 책, 도시
+Director: 정다운
+Actor 1: 이기웅
+Actor 2: 승효상
+Runtime: 101
+Rating: 전체관람가
+Genre: 드라마,교육,기업ㆍ기관ㆍ단체,사회,역사,지역
+Release Date: 20220421
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/66/tn_DPA001570.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/03/tn_DST764093.jpg
+VOD URL: 
+
+DOCID: K24515
+Title:  영희
+Director: 차상민
+Actor 1: 기은수
+Actor 2: 서범석
+Runtime: 112
+Rating: 15세관람가
+Genre: 코메디
+Release Date: 20220501
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/68/tn_DPK018972.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/14/tn_DST765121.jpg
+VOD URL: 
+
+DOCID: K24514
+Title:  디스 아메리카노
+Director: 권유주
+Actor 1: 변세희
+Actor 2: 한재하
+Runtime: 79
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20210901
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/34/tn_DPK017308.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/57/32/tn_DST725534.jpg
+VOD URL: 
+
+DOCID: K02675
+Title:  흑권
+Director: 황풍
+Actor 1: 이준구
+Actor 2: 모영
+Runtime: 91
+Rating: 중학생이상
+Genre: 액션,시대극/사극
+Release Date: 19730909
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/54/tn_DPK02675A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/58/90/tn_DST741574.jpg
+VOD URL: 
+
+DOCID: K02591
+Title:  우정
+Director: 김효천
+Actor 1: 김희라
+Actor 2: 나훈아
+Runtime: 105
+Rating: 고등학생이상관람가
+Genre: 스포츠,드라마
+Release Date: 19730101
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/43/tn_DPK008012.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/23/52/tn_DSKT090511.JPG
+VOD URL: 
+
+DOCID: K22659
+Title:  테우리
+Director: 이난
+Actor 1: 서현우
+Actor 2: 한사명
+Runtime: 85
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20200709
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/61/tn_DPK016053.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/54/39/tn_DST692473.jpg
+VOD URL: 
+
+DOCID: K01569
+Title:  여자 베트콩 18호
+Director: 강범구
+Actor 1: 박기수
+Actor 2: 깐난
+Runtime: 68
+Rating: 국민학생관람불가
+Genre: 드라마,전쟁
+Release Date: 19671101
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/78/tn_DPK01569A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/61/tn_DST706582.jpg
+VOD URL: 
+
+DOCID: K24213
+Title:  썰
+Director: 황승재
+Actor 1: 김강현
+Actor 2: 강찬희
+Runtime: 84
+Rating: 18세관람가(청소년관람불가)
+Genre: 코메디,스릴러,미스터리,공포
+Release Date: 20210603
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/29/tn_DPK017065.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/56/49/tn_DST717093.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050317_P02.mp4
+
+DOCID: K28794
+Title:  데드캠핑 더라이브
+Director: 김현우
+Actor 1: 남지현
+Actor 2: 김류안
+Runtime: 72
+Rating: 18세관람가(청소년관람불가)
+Genre: 스릴러,액션
+Release Date: 20220512
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/67/tn_DPK018961.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/21/tn_DST765624.jpg
+VOD URL: 
+
+DOCID: K02889
+Title:  왜 그랬던가
+Director: 임권택
+Actor 1: 허장강
+Actor 2: 박근형
+Runtime: 105
+Rating: 고등학생이상관람가
+Genre: 드라마
+Release Date: 19751115
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/48/tn_DPK008323.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/24/62/tn_DSKT293202.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK001441_P02.mp4
+
+DOCID: K26391
+Title:  우리는 이별에 서툴러서
+Director: 이현지
+Actor 1: 이건욱
+Actor 2: 김현진
+Runtime: 66
+Rating: 12세관람가
+Genre: 드라마,멜로/로맨스,판타지,옴니버스
+Release Date: 20211211
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/52/tn_DPK018335.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/82/tn_DST751758.jpg
+VOD URL: 
+
+DOCID: K02792
+Title:  왜?
+Director: 박노식
+Actor 1: 박노식
+Actor 2: 김청자
+Runtime: 100
+Rating: 고등학생이상관람가
+Genre: 계몽
+Release Date: 19740829
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/46/tn_DPK008179.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/53/tn_DST748533.jpg
+VOD URL: 
+
+DOCID: K26022
+Title:  숏버스 기묘행
+Director: 현명우
+Actor 1: 이정현
+Actor 2: 안태주
+Runtime: 66
+Rating: 15세관람가
+Genre: 드라마,미스터리,옴니버스
+Release Date: 20210930
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/42/tn_DPK017834.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/58/94/tn_DST741934.jpg
+VOD URL: 
+
+DOCID: K22244
+Title:  인질
+Director: 필감성
+Actor 1: 황정민
+Actor 2: 김재범
+Runtime: 94
+Rating: 15세관람가
+Genre: 액션,범죄,스릴러
+Release Date: 20210818
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/33/tn_DPK017248.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/57/19/tn_DST724179.jpg
+VOD URL: 
+
+DOCID: K02488
+Title:  의사 안중근
+Director: 주동진
+Actor 1: 김진규
+Actor 2: 박노식
+Runtime: 126
+Rating: 국민학생이상관람가
+Genre: 시대극/사극
+Release Date: 19720216
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/77/tn_DPK02488A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/12/31/tn_S_K02488_2.jpg
+VOD URL: 
+
+DOCID: K20772
+Title:  승리호
+Director: 조성희
+Actor 1: 송중기
+Actor 2: 김태리
+Runtime: 136
+Rating: 12세관람가
+Genre: SF,판타지,드라마
+Release Date: 20210205
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/17/tn_DPK016715.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/54/93/tn_DST698183.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK045862_P02.mp4
+
+DOCID: K28743
+Title:  공기살인
+Director: 조용선
+Actor 1: 김상경
+Actor 2: 이선빈
+Runtime: 108
+Rating: 12세관람가
+Genre: 드라마
+Release Date: 20220422
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/66/tn_DPK018919.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/60/94/tn_DST763241.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK055843_P02.mp4
+
+DOCID: K02923
+Title:  태백산맥
+Director: 권영순
+Actor 1: 신성일
+Actor 2: 윤정희
+Runtime: 150
+Rating: 고등학생가
+Genre: 반공/분단
+Release Date: 19750827
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/77/tn_DPK02923A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/13/31/tn_DSKT001539.JPG
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK001358_P02.mp4
+
+DOCID: K23715
+Title:  낫아웃
+Director: 이정곤
+Actor 1: 정재광
+Actor 2: 정승길
+Runtime: 107
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20210603
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/29/tn_DPK017068.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/96/tn_DST710249.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK050318_P02.mp4
+
+DOCID: A10999
+Title:  명색이 아프레걸
+Director: 김광보
+Actor 1: 이소연
+Actor 2: 김지숙
+Runtime: 107
+Rating: 전체관람가
+Genre: 드라마
+Release Date: 20220526
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/70/tn_DPA001584.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/43/tn_DST767815.jpg
+VOD URL: 
+
+DOCID: K17584
+Title:  비행
+Director: 조성빈
+Actor 1: 홍근택
+Actor 2: 차지현
+Runtime: 88
+Rating: 15세관람가
+Genre: 드라마,범죄
+Release Date: 20200319
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/05/47/tn_DPK015461.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/49/28/tn_DSKT298209.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK044836_P02.mp4
+
+DOCID: K28220
+Title:  범죄도시2
+Director: 이상용
+Actor 1: 마동석
+Actor 2: 손석구
+Runtime: 106
+Rating: 15세관람가
+Genre: 범죄,액션
+Release Date: 20220518
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/68/tn_DPK019003.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/53/tn_DST768804.jpg
+VOD URL: 
+
+DOCID: K02956
+Title:  김두한(속,제4부)
+Director: 고영남
+Actor 1: 이대근
+Actor 2: 서미경
+Runtime: 100
+Rating: 국민학생관람불가
+Genre: 액션
+Release Date: 19751231
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/03/99/tn_DPK02956A.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/61/37/tn_DST767266.jpg
+VOD URL: 
+
+DOCID: A10554
+Title:  수프와 이데올로기
+Director: 양영희
+Actor 1: 강정희
+Actor 2: 양영희
+Runtime: 118
+Rating: 12세관람가
+Genre: 역사,가족
+Release Date: 20221020
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/82/tn_DPA001653.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/63/16/tn_DST783967.jpg
+VOD URL: 
+
+DOCID: K23393
+Title:  더블패티
+Director: 백승환
+Actor 1: 신승호
+Actor 2: 아이린
+Runtime: 107
+Rating: 15세관람가
+Genre: 드라마
+Release Date: 20210217
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/18/tn_DPK016736.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/55/83/tn_DST708860.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK048909_P02.mp4
+
+DOCID: K28902
+Title:  안나푸르나
+Director: 황승재
+Actor 1: 김강현
+Actor 2: 차선우
+Runtime: 72
+Rating: 전체관람가
+Genre: 드라마,코메디,멜로/로맨스
+Release Date: 20230608
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/18/04/tn_DPK020526.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/64/72/tn_DST801279.jpg
+VOD URL: 
+
+DOCID: K27823
+Title:  싸나희 순정
+Director: 정병각
+Actor 1: 전석호
+Actor 2: 박명훈
+Runtime: 104
+Rating: 12세관람가
+Genre: 드라마,코메디
+Release Date: 20211125
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/50/tn_DPK018279.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/59/81/tn_DST751645.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK054367_P02.mp4
+
+DOCID: K19027
+Title:  멀리가지마라
+Director: 박현용
+Actor 1: 손병호
+Actor 2: 손진환
+Runtime: 76
+Rating: 15세관람가
+Genre: 드라마,코메디,가족
+Release Date: 20210304
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/19/tn_DPK016784.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/50/33/tn_DSKT304760.jpg
+VOD URL: https://www.kmdb.or.kr/trailer/trailerPlayPop?pFileNm=MK049815_P02.mp4
+
+DOCID: K23834
+Title:  인트로덕션
+Director: 홍상수
+Actor 1: 신석호
+Actor 2: 박미소
+Runtime: 66
+Rating: 12세관람가
+Genre: 드라마
+Release Date: 20210527
+Poster URL: http://file.koreafilm.or.kr/thm/02/99/17/28/tn_DPK017051.jpg
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/56/03/tn_DST711153.jpg
+VOD URL: 
+
+DOCID: K02233
+Title:  천사의 눈물
+Director: 최훈
+Actor 1: 윤정희
+Actor 2: 윤양하
+Runtime: 90
+Rating: 국민학생이상관람가
+Genre: 멜로/로맨스,드라마,가족
+Release Date: 19701030
+Poster URL: http://file.koreafilm.or.kr/thm/02/00/02/38/tn_DPK007733.JPG
+Still URL: http://file.koreafilm.or.kr/thm/01/copy/00/18/34/tn_DSKT047227.JPG
+VOD URL: 
+
+
+ 우키시마호
+ 엄마와 나
+ 학교 가는 길
+ 위대한 계약: 파주, 책, 도시
+ 수프와 이데올로기
+ 로그 인 벨지움
+ 다녀와요, 다녀왔습니다
+ 초선
+ 명색이 아프레걸
+ 철면황제
+ 여자 베트콩 18호
+ 저 언덕을 넘어서
+ 카인의 후예
+ 피해자
+ 황혼의 부루-스
+ 물망초
+ 요절복통 일망타진
+ 천사의 눈물
+ 의사 안중근
+ 우정
+ 흑권
+ 혈권
+ 왜?
+ 연화
+ 조총련
+ 애수의 샌프란시스코
+ 애처일기
+ 왜 그랬던가
+ 태백산맥
+ 김두한(속,제4부)
+ 꿈의 제인
+ 포크레인
+ 비행
+ 콜
+ 멀리가지마라
+ 히치하이크
+ 승리호
+ 감쪽같은 그녀
+ 서복
+ 인질
+ 구원
+ 테우리
+ 좀비크러쉬: 헤이리
+ 마지막 휴가
+ 인싸
+ 더블패티
+ 낫아웃
+ 인트로덕션
+ 모가디슈
+ 썰
+ 나만 보이니
+ 디스 아메리카노
+ 영희
+ 쇼미더고스트
+ 숏버스 기묘행
+ 우리는 이별에 서툴러서
+ 로또쉐어
+ 피어썸
+ 요정
+ 컨버세이션
+ 싸나희 순정
+ 트랜스
+ 범죄도시2
+ 3.5교시
+ 평평남녀
+ 공기살인
+ 스파이형 모델
+ 데드캠핑 더라이브
+ 말이야 바른 말이지
+ 안나푸르나
 </pre>
 </span>
 </div>
@@ -138,7 +1268,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 1. 5. 오후 10:59:05</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 1. 6. 오후 6:01:31</p>
 </div>
 </div>
 </body>
