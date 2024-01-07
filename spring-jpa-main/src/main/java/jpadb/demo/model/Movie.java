@@ -1,13 +1,13 @@
 package jpadb.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class  Movie {
     @Id
@@ -23,6 +23,19 @@ public class  Movie {
     private String posterUrl;
     private String stillUrl;
     private String vodUrl;
+
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.REMOVE)
+    private List<Comment> comments = new ArrayList<Comment>();
+
+    // 기타 getter와 setter 메소드들
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
 
     public String getDocid() {
         return docid;
