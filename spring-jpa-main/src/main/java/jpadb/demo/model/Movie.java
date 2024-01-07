@@ -9,7 +9,7 @@ import lombok.Setter;
 
 import java.sql.Date;
 @Entity
-public class Movie {
+public class  Movie {
     @Id
     private String docid;
     private String title;
