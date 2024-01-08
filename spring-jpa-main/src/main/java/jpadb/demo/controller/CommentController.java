@@ -28,7 +28,7 @@ public class CommentController {
     public Comment saveComment(@RequestBody Map<String, String> body){
 
         Comment comment = new Comment();
-        comment.setCommentid(body.get("commentid"));
+        //comment.setCommentid(body.get("commentid"));
         comment.setScore(Integer.parseInt(body.get("score"))); // 문자열을 정수로 변환
         comment.setLinecomment(body.get("linecomment"));
         comment.setLongcomment(body.get("longcomment"));

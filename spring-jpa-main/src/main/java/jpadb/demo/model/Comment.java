@@ -1,14 +1,12 @@
 package jpadb.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 @Entity
 public class Comment {
     @Id
-    private String commentid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long commentid;
     private int score;
     private String linecomment;
     private String longcomment;
@@ -25,11 +23,11 @@ public class Comment {
         this.movie = movie;
     }
 
-    public String getCommentid() {
+    public Long getCommentid() {
         return commentid;
     }
 
-    public void setCommentid(String commentid) {
+    public void setCommentid(Long commentid) {
         this.commentid = commentid;
     }
 
