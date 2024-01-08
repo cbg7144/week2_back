@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 // search하는 string으로 movie찾는 함수
 @Service
@@ -47,6 +48,11 @@ public class MovieService {
         return movieRepository.findByTitle(title);
         // 'findByTitle'은 MovieRepository에 정의해야 하는 메서드입니다.
         // 이 메서드는 제목으로 Movie 객체를 찾고, 찾지 못했을 경우 null을 반환합니다.
+    }
+
+    public Movie getMovieByDocid(String docid) {
+        Optional<Movie> movie = movieRepository.findById(docid);
+        return movie.orElse(null);
     }
 
 }

@@ -30,6 +30,11 @@ public class MovieController {
     @GetMapping("/movie/list")
     public List<Movie> getAllMovies(){return movieService.getAllMovies();}
 
+    @GetMapping("/movie/view")
+    public Movie getMovieView(@RequestParam Map<String, String> body) {
+        return movieService.getMovieByDocid(body.get("docid"));
+    }
+
 //    @PostMapping("/movie/searchid")
 //    public List<Movie> searchMovieById(@RequestBody String searchid) {
 //        return movieService.searchMoviesById(searchid);
