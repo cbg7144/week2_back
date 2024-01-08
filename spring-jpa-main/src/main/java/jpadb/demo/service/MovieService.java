@@ -43,5 +43,13 @@ public class MovieService {
         return movies;
     }
 
+    public Movie findByTitle(String title) {
+        return movieRepository.findByTitle(title);
+        // 'findByTitle'은 MovieRepository에 정의해야 하는 메서드입니다.
+        // 이 메서드는 제목으로 Movie 객체를 찾고, 찾지 못했을 경우 null을 반환합니다.
+    }
+
 }
+
+
 

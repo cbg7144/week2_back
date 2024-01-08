@@ -22,7 +22,7 @@ public class MovieController {
 //    }
 
     @GetMapping ("/movie/search")
-    public List<Movie> searchMovie(@RequestBody Map<String, String> body) { // Map<String, String> 빼먹어서 5시간 날림
+    public List<Movie> searchMovie(@RequestParam Map<String, String> body) { // Map<String, String> 빼먹어서 5시간 날림
         return movieService.searchMovies(body.get("searchString"));
         ////// movie repository에서 검색기능하는 함수 쓰기
     }

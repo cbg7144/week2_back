@@ -25,7 +25,7 @@ public class  Movie {
     private String vodUrl;
 
 //    @OneToMany(mappedBy = "movie", cascade = CascadeType.REMOVE)
-//    private List<Comment> comments = new ArrayList<Comment>();
+//    private List<Comment> comments = new ArrayList<>();
 //
 //    // 기타 getter와 setter 메소드들
 //
