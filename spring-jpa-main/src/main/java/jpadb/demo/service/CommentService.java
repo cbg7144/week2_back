@@ -1,4 +1,4 @@
-package jpadb.demo.service;
-
-public class CommentService {
-}
+//package jpadb.demo.service;
+//
+//public class CommentService {
+//}

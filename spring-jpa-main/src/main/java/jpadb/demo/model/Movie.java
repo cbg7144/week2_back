@@ -24,18 +24,18 @@ public class  Movie {
     private String stillUrl;
     private String vodUrl;
 
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.REMOVE)
-    private List<Comment> comments = new ArrayList<Comment>();
-
-    // 기타 getter와 setter 메소드들
-
-    public List<Comment> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
-    }
+//    @OneToMany(mappedBy = "movie", cascade = CascadeType.REMOVE)
+//    private List<Comment> comments = new ArrayList<Comment>();
+//
+//    // 기타 getter와 setter 메소드들
+//
+//    public List<Comment> getComments() {
+//        return comments;
+//    }
+//
+//    public void setComments(List<Comment> comments) {
+//        this.comments = comments;
+//    }
 
     public String getDocid() {
         return docid;
