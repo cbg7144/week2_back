@@ -20,6 +20,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.stereotype.Component;
 
 
+@Component
 public class ApiExplorer {
 
     private static final StringBuilder cumulativeResponse = new StringBuilder();
@@ -41,7 +42,7 @@ public class ApiExplorer {
         return response.body();
     }
 
-    public static void main(String[] args) {
+    public void runApiExplorer() {
 //        ApplicationContext context = new AnnotationConfigApplicationContext(YourSpringConfig.class);
 //        MovieDao movieDao = context.getBean(MovieDao.class);
 //

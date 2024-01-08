@@ -1,15 +1,16 @@
 package jpadb.demo;
 
+import jpadb.demo.api.ApiExplorer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+		ApiExplorer apiExplorer = context.getBean(ApiExplorer.class);
+		apiExplorer.runApiExplorer();
 	}
-
-
-
 }
