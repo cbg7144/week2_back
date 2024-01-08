@@ -14,7 +14,6 @@ public interface MovieRepository extends JpaRepository<Movie, String> {
 
     // SELECT * FROM movie WHERE title LIKE '%title%'
     List<Movie> findByTitleContaining (String title);
-
-
     Movie findByTitle(String title);
+
 }
