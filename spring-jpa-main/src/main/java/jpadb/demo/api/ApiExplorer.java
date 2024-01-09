@@ -48,7 +48,7 @@ public class ApiExplorer {
 //
 //        ApiResponseHandler responseHandler = new ApiResponseHandler(movieDao);
         try {
-            for (int i = 1; i <= 100; i++) {
+            for (int i = 1; i <= 300; i++) {
                 String pageResponse = getApiResponse(10*i);
                 // pageResponse를 cumulativeResponse에 추가
                 ApiResponseHandler.processPageResponse(pageResponse, cumulativeResponse);
@@ -56,7 +56,7 @@ public class ApiExplorer {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("response: " + cumulativeResponse);
+        //System.out.println("response: " + cumulativeResponse);
         //System.out.println("title: " + jsonResponse);
     }
 
@@ -144,8 +144,8 @@ class ApiResponseHandler {
                 movie.setVodUrl(vodUrl);
 //
 //                System.out.println("저장된 영화:");
-                System.out.println("제목: " + movie.getTitle());
-                System.out.println("감독: " + movie.getDirectorNm());
+//                System.out.println("제목: " + movie.getTitle());
+//                System.out.println("감독: " + movie.getDirectorNm());
 
 //                Movie movie = new Movie();
 ////

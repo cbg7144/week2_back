@@ -9,11 +9,18 @@ import jakarta.persistence.Id;
 @Entity
 public class Game {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String gameid;
     private String question;
     private String answer;
     private String posterUrl;
+
+    public Game(String gameid, String question, String answer, String posterUrl) {
+        this.gameid = gameid;
+        this.question = question;
+        this.answer = answer;
+        this.posterUrl = posterUrl;
+    }
 
     public String getGameid() {
         return gameid;
