@@ -5,7 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-
 @Entity
 public class Game {
     @Id
@@ -13,13 +12,16 @@ public class Game {
     private String gameid;
     private String question;
     private String answer;
-    private String posterUrl;
+    private String poster_url;
 
-    public Game(String gameid, String question, String answer, String posterUrl) {
+    public Game() {
+    }
+
+    public Game(String gameid, String question, String answer, String poster_url) {
         this.gameid = gameid;
         this.question = question;
         this.answer = answer;
-        this.posterUrl = posterUrl;
+        this.poster_url = poster_url;
     }
 
     public String getGameid() {
@@ -47,10 +49,10 @@ public class Game {
     }
 
     public String getPosterUrl() {
-        return posterUrl;
+        return poster_url;
     }
 
-    public void setPosterUrl(String posterUrl) {
-        this.posterUrl = posterUrl;
+    public void setPosterUrl(String poster_url) {
+        this.poster_url = poster_url;
     }
 }
