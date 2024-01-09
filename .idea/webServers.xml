@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fe92bbe6-a5ba-4ec6-9cdb-7b9837f1f71d" name="madcamp">
+        <fileTransfer accessType="SFTP" host="172.10.7.30" port="22" sshConfigId="5c79cdf1-0465-4130-adbc-a17f393954ac" sshConfig="root@172.10.7.30:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
