@@ -2,7 +2,9 @@ package jpadb.demo.controller;
 
 import jpadb.demo.model.Comment;
 import jpadb.demo.model.Movie;
+import jpadb.demo.model.UserInfo;
 import jpadb.demo.repository.CommentRepository;
+import jpadb.demo.repository.UserInfoRepository;
 import jpadb.demo.service.CommentService;
 import jpadb.demo.service.MovieService;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +25,7 @@ public class CommentController {
 
     //@Autowired
     private final MovieService movieService;
+    private final UserInfoRepository userInfoRepository;
     // comment 저장
     @PostMapping("/comment/save")
     public Comment saveComment(@RequestBody Map<String, String> body){
@@ -37,17 +40,23 @@ public class CommentController {
         // 예: comment.setMovie(movieService.findMovieById(body.get("movieId")));
 
         // 로그 출력
-        System.out.println("Comment ID: " + comment.getCommentid());
-        System.out.println("Score: " + comment.getScore());
-        System.out.println("Line Comment: " + comment.getLinecomment());
-        System.out.println("Long Comment: " + comment.getLongcomment());
+//        System.out.println("Comment ID: " + comment.getCommentid());
+//        System.out.println("Score: " + comment.getScore());
+//        System.out.println("Line Comment: " + comment.getLinecomment());
+//        System.out.println("Long Comment: " + comment.getLongcomment());
+
+        // Userid를 사용하여 UserInfo 엔티티를 찾아서 Comment에 설정
+        UserInfo userInfo = userInfoRepository.findByUserid(body.get("userid"));
+        if (userInfo != null) {
+            comment.setUserInfo(userInfo);
+        }
 
         String movieTitle = body.get("movieTitle");
         Movie movie = movieService.findByTitle(movieTitle);
         if (movie != null) {
             comment.setMovie(movie);
-            System.out.println("Associated Movie Title: " + movie.getTitle());
-            System.out.println("Associated Movie DocID: " + movie.getDocid());
+            //System.out.println("Associated Movie Title: " + movie.getTitle());
+            //System.out.println("Associated Movie DocID: " + movie.getDocid());
         }
         commentRepository.save(comment);
 
@@ -57,8 +66,15 @@ public class CommentController {
     // comment 띄우기
     @GetMapping("/comment/load")
     public List<Comment> loadComment(@RequestParam Map<String,String> body){
-        System.out.println("title: " + body.get("searchTitle"));
+        //System.out.println("title: " + body.get("searchTitle"));
         return commentRepository.findCommentsByMovieTitle(body.get("searchTitle"));
+
+    }
+
+    @GetMapping("/comment/load/id")
+    public List<Comment> loadCommentbyId(@RequestParam Map<String,String> body){
+        //System.out.println("title: " + body.get("searchTitle"));
+        return commentRepository.findCommentsByUserInfoUserid(body.get("id"));
 
     }
 

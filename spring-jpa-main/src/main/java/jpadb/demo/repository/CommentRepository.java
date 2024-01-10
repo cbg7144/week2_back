@@ -10,5 +10,6 @@ import java.util.List;
 public interface CommentRepository extends JpaRepository<Comment, String> {
 
     List<Comment> findCommentsByMovieTitle(String title);
+    List<Comment> findCommentsByUserInfoUserid(String id);
 
 }

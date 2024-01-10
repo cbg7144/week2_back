@@ -23,6 +23,18 @@ public class Comment {
         this.movie = movie;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "userid") // Join 시킬 컬럼 이름 설정 (여기서 "userid"는 UserInfo 엔티티의 기본 키 컬럼 이름)
+    private UserInfo userInfo;
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
+
     public Long getCommentid() {
         return commentid;
     }
