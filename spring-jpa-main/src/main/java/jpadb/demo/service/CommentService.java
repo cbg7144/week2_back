@@ -2,7 +2,7 @@ package jpadb.demo.service;
 
 import jakarta.transaction.Transactional;
 import jpadb.demo.model.Comment;
-import jpadb.demo.model.User;
+//import jpadb.demo.model.User;
 import jpadb.demo.repository.CommentRepository;
 import jpadb.demo.repository.MovieRepository;
 import lombok.RequiredArgsConstructor;

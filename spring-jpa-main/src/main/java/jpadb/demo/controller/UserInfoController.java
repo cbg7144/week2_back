@@ -28,9 +28,8 @@ public class UserInfoController {
     }
 
     @PostMapping("/userinfo/signup")
-    public boolean signup(@RequestParam("id") String id,
-                          @RequestParam("pwd") String pwd){
-        UserInfo userInfo = userInfoRepository.findByUserid(id);
+    public boolean signup(@RequestBody Map<String, String> body){
+        UserInfo userInfo = userInfoRepository.findByUserid(body.get("id"));
 
         // 이미 존재하는 id인 경우 허용되지 않음
         if (userInfo != null) {
@@ -39,8 +38,8 @@ public class UserInfoController {
 
         // 존재하지 않는 id인 경우 저장하고 허용됨
         UserInfo newUser = new UserInfo();
-        newUser.setId(id);
-        newUser.setPwd(pwd);
+        newUser.setId(body.get("id"));
+        newUser.setPwd(body.get("pwd"));
         userInfoRepository.save(newUser);
         return true;
 
