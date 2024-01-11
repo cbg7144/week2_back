@@ -27,7 +27,7 @@ public class ApiExplorer {
 
     public static String getApiResponse(int startCount) throws IOException, InterruptedException {
         String baseUrl = "http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp";
-        String serviceKey = "OG3E567G19R95KSI04UR";
+        String serviceKey = "";
         String collection = "kmdb_new2";
         String nation = URLEncoder.encode("대한민국", StandardCharsets.UTF_8);
         String url = String.format("%s?collection=%s&nation=%s&startCount=%d&listCount=10&ServiceKey=%s", baseUrl, collection, nation, startCount, serviceKey);
